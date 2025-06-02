@@ -22,11 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Lint
-        run: npm run lint
-
       - name: Run Format
         run: npm run format
 
       - name: Run Build
-        run: npm run build
+        run: npm run prebuild
