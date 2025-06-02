@@ -12,9 +12,9 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*.{js,ts,jsx,tsx}": [
-      "npm run lint",
-      "npm run format"
+    "**/*.{js,ts,jsx,tsx,json}": [
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "dependencies": {
